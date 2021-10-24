@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="pizza.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css"/>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="nav-menu-left">
+                <a href=""><img src="./images/logo-pizza-removebg-preview.png" alt=""></a>
+            </div>
+            <div class="nav-menu-right">
+                <ul id="main-menu">
+                    <li> <a class="nav-menu-link active" href="#home">Home</a> </li>
+                    <li> <a class="nav-menu-link" href="#speciality">Speciality</a> </li>
+                    <li> <a class="nav-menu-link" href="#popular">Popular</a> </li>
+                    <li> <a class="nav-menu-link" href="#gallery">Gallery</a> </li>
+                    <li> <a class="nav-menu-link" href="#review">Review</a> </li>
+                    <li> <a class="nav-menu-link" href="#order">Order</a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="home" id="home">
+            <div class="content">
+                <h3>Food Made With Love</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam distinctio quos cupiditate ipsa modi
+                    voluptate autem doloribus praesentium deleniti, vero optio dolorum veritatis ad qui corporis ullam
+                    voluptatum blanditiis iusto?
+                </p>
+                <button class="button">Order Now</button>
+            </div>
+            <div class="image">
+                <img src="./images/home-img.png" alt="">
+            </div>
+        </div>
+
+        <div class="speciality" id="speciality">
+            <div class="text">
+                <h3>Our <span>Speciality</span></h3>
+            </div>
+            <div class="row_1">
+                <div class="item">
+                    <img src="/images/s-img-1.jpg" alt="">
+                    <div class="content">
+                        <img src="./images/s-1.png" alt="">
+                        <h4>Tasty Burger</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique veritatis eveniet quam
+                            aspernatur debitis iusto deserunt? Quod, dicta. Deserunt, ex.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/images/s-img-2.jpg" alt="">
+                    <div class="content">
+                        <img src="./images/s-2.png" alt="">
+                        <h4>Tasty pizza</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique veritatis eveniet quam
+                            aspernatur debitis iusto deserunt? Quod, dicta. Deserunt, ex.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/images/s-img-3.jpg" alt="">
+                    <div class="content">
+                        <img src="./images/s-3.png" alt="">
+                        <h4>Cold Ice-cream</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique veritatis eveniet quam
+                            aspernatur debitis iusto deserunt? Quod, dicta. Deserunt, ex.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/images/s-img-4.jpg" alt="">
+                    <div class="content">
+                        <img src="./images/s-4.png" alt="">
+                        <h4>Cold Drinks</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique veritatis eveniet quam
+                            aspernatur debitis iusto deserunt? Quod, dicta. Deserunt, ex.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row_2">
+                <div class="item">
+                    <img src="/images/s-img-5.jpg" alt="">
+                    <div class="content">
+                        <img src="./images/s-5.png" alt="">
+                        <h4>tasty berger</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique veritatis eveniet quam
+                            aspernatur debitis iusto deserunt? Quod, dicta. Deserunt, ex.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/images/s-img-6.jpg" alt="">
+                    <div class="content">
+                        <img src="./images/s-6.png" alt="">
+                        <h4>tasty berger</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique veritatis eveniet quam
+                            aspernatur debitis iusto deserunt? Quod, dicta. Deserunt, ex.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popular" id="popular">
+            <div class="text">
+                <h3>Most <span>Popular</span> Foods</h3>
+            </div>
+            <div class="row_1">
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/p-1.jpg" alt="">
+                        <div class="span">
+                            <span>$5 - $20</span>
+                        </div>
+                    </div>
+                    <h4>Tasty Burger</h4>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button class="button">Order Now</button>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/p-2.jpg" alt="">
+                        <div class="span">
+                            <span>$5 - $20</span>
+                        </div>
+                    </div>
+                    <h4>Tasty Cakes</h4>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button class="button">Order Now</button>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/p-3.jpg" alt="">
+                        <div class="span">
+                            <span>$5 - $20</span>
+                        </div>
+                    </div>
+                    <h4>Tasty Sweets</h4>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button class="button">Order Now</button>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/p-4.jpg" alt="">
+                        <div class="span">
+                            <span>$5 - $20</span>
+                        </div>
+                    </div>
+                    <h4>Tasty Cupcakes</h4>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button class="button">Order Now</button>
+                </div>
+            </div>
+            <div class="row_2">
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/p-5.jpg" alt="">
+                        <div class="span">
+                            <span>$5 - $20</span>
+                        </div>
+                    </div>
+                    <h4>Cold Drinks</h4>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                        <button>Order Now</button>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/p-6.jpg" alt="">
+                        <div class="span">
+                            <span>$5 - $20</span>
+                        </div>
+                    </div>
+                    <h4>Cold Ice-cream</h4>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button class="button">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="work">
+            <div class="text">
+                <h3>How It <span>Works</span></h3>
+            </div>
+            <div class="step">
+                <div class="item">
+                    <img src="./images/step-1.jpg" alt="">
+                    <h3>Choose Your Favorite Food</h3>
+                </div>
+                <div class="item">
+                    <img src="./images/step-2.jpg" alt="">
+                    <h3>Free And Fast Delivery</h3>
+                </div>
+                <div class="item">
+                    <img src="./images/step-3.jpg" alt="">
+                    <h3>Easy Payments Methods</h3>
+                </div>
+                <div class="item">
+                    <img src="./images/step-4.jpg" alt="">
+                    <h3>And Finally, Enjoy Your Food</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery" id="gallery">
+            <div class="text">
+                <h3>Most <span>Popular</span> Food</h3>
+            </div>
+            <div class="row_1">
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/g-1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Tasty Food</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, iusto.</p>
+                        <button class="button">Order Now</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/g-2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Tasty Food</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, iusto.</p>
+                        <button class="button">Order Now</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/g-3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Tasty Food</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, iusto.</p>
+                        <button class="button">Order Now</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/g-4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Tasty Food</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, iusto.</p>
+                        <button class="button">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row_2">
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/g-5.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Tasty Food</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, iusto.</p>
+                        <button class="button">Order Now</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/g-6.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Tasty Food</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, iusto.</p>
+                        <button class="button">Order Now</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/g-7.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Tasty Food</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, iusto.</p>
+                        <button class="button">Order Now</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/g-8.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Tasty Food</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, iusto.</p>
+                        <button class="button">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row_3">
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/g-9.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Tasty Food</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, iusto.</p>
+                        <button class="button">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review" id="review">
+            <div class="text">
+                <h3>Our Customers <span>Reviews</span></h3>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/pic1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>John Deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores minus sapiente</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/pic2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>John Deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores minus sapiente</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/pic3.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>John Deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores minus sapiente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="order" id="order">
+            <div class="text">
+                <h3><span>Order</span> Now</h3>
+            </div>
+            <div class="row">
+                <div class="image">
+                    <img src="/images/order-img.jpg" alt="">
+                </div>
+                <div class="form">
+                        <div class="row_1">
+                            <div class="input">
+                                <input type="text" name="name" placeholder="name">
+                            </div>
+                            <div class="input">
+                                <input type="text" name="email" placeholder="email">
+                            </div>
+                        </div>
+                        <div class="row_2">
+                            <div class="input">
+                                <input type="text" name="number" placeholder="number">
+                            </div>
+                            <div class="input">
+                                <input type="text" name="food name" placeholder="food name">
+                            </div>
+                        </div>
+                        <div class="row_3">
+                            <div class="input">
+                                <input type="text" name="address" placeholder="address">
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Order Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="button">
+                <button>Facebook</button>
+                <button>Twitter</button>
+                <button>Instagram</button>
+                <button>Pinterest</button>
+                <button>LikedIn</button>
+            </div>
+            <div class="text">
+                <h3>Created By <span>Mr. Web Designer</span> | All Rights Reserved</h3>
+            </div>
+        </div>
+
+        <div class="loader" style="background-image: url(./images/loader.gif);"></div>
+
+        <div href="javascript:;" class="button_scroll2top" onclick="page_scroll2top()"><i class="fa fa-chevron-up"></i></div>
+        <script type="text/javascript">
+            $(window).scroll(function(){
+                if($(window).scrollTop() >= 10){
+                    $('.button_scroll2top').show();
+                }
+                else{
+                    $('.button_scroll2top').hide();
+                }
+            });
+            function page_scroll2top(){
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 'fast');
+            }      
+           </script>
+    </div>
+    <script>
+        function loader(){
+            document.querySelector('.loader').classList.add('active');
+        }
+        function fade(){
+            setInterval(loader, 1000);
+        }
+        window.onload = fade();
+    </script>
+</body>
+</html>
