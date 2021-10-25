@@ -20,6 +20,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -44,11 +46,11 @@
                     <label class="top-bar-mobile-check" for="stylebar"><i class='bx bx-chevron-left'></i></label>
                     <div class="menu-mobile-link">
                         <a class="nav-menu-link" href="#home">Home</a>
-                        <a class="nav-menu-link" href="#protect">Protect</a>
-                        <a class="nav-menu-link" href="#symptoms">Symtoms</a>
-                        <a class="nav-menu-link" href="#prevent">Prevent</a>
-                        <a class="nav-menu-link" href="#wash">Handwash</a>
-                        <a class="nav-menu-link" href="#spread">Spread</a>
+                        <a class="nav-menu-link" href="#speciality">Speciality</a>
+                        <a class="nav-menu-link" href="#popular">Popular</a>
+                        <a class="nav-menu-link" href="#gallery">Gallery</a>
+                        <a class="nav-menu-link" href="#review">Review</a>
+                        <a class="nav-menu-link" href="#order">Order</a>
                     </div>
                 </div>
             </div>
@@ -440,30 +442,31 @@
                 <div class="image">
                     <img src="/images/order-img.jpg" alt="">
                 </div>
-                <div class="form" id="form" name="form">
+                <div class="form" id="form">
+                    <form action="" id="form">
                         <div class="row_1">
                             <div class="input">
-                                <input type="text" name="name" placeholder="name" id="name">
+                                <input type="text" name="name" placeholder="name" id="name" required>
                             </div>
                             <div class="input">
-                                <input type="text" name="email" placeholder="email" id="email">
+                                <input type="text" name="email" placeholder="email" id="email" required>
                             </div>
                         </div>
                         <div class="row_2">
                             <div class="input">
-                                <input type="text" name="number" placeholder="number" id="number">
+                                <input type="text" name="number" placeholder="number" id="number" required>
                             </div>
                             <div class="input">
-                                <input type="text" name="food_name" placeholder="food name" id="food_name">
+                                <input type="text" name="food_name" placeholder="food name" id="food_name" required>
                             </div>
                         </div>
                         <div class="row_3">
                             <div class="input">
-                                <input type="text" name="address" placeholder="address" id="address">
+                                <input type="text" name="address" placeholder="address" id="address" required>
                             </div>
                         </div>
                         <div class="button">
-                            <button class="button">Order Now</button>
+                            <button type="submit">Order Now</button>
                         </div>
                     </form>
                 </div>
@@ -500,8 +503,8 @@
                     scrollTop: 0
                 }, 'fast');
             }      
-
-            /* $("#form").validate({
+        $(document).ready(function(){
+            $("#form").validate({
                 rules:{
                     name: "required",
                     email: {
@@ -522,7 +525,8 @@
                 submitHandler: function(form) {
                     form.submit();
                 }
-            });*/
+            }); 
+        });    
            </script>
     </div>
     <script>
