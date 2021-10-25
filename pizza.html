@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="stylesheet" href="pizza.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="pizza.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>    
     <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -30,6 +36,21 @@
                     <li> <a class="nav-menu-link" href="#review">Review</a> </li>
                     <li> <a class="nav-menu-link" href="#order">Order</a> </li>
                 </ul>
+            </div>
+            <div class="top-bar-mobile">
+                <label class="top-bar-mobile-check" for="stylebar"> <i class='bx bx-menu'></i></label>
+                <input type="checkbox" id="stylebar">
+                <div class="menu-mobile">
+                    <label class="top-bar-mobile-check" for="stylebar"><i class='bx bx-chevron-left'></i></label>
+                    <div class="menu-mobile-link">
+                        <a class="nav-menu-link" href="#home">Home</a>
+                        <a class="nav-menu-link" href="#protect">Protect</a>
+                        <a class="nav-menu-link" href="#symptoms">Symtoms</a>
+                        <a class="nav-menu-link" href="#prevent">Prevent</a>
+                        <a class="nav-menu-link" href="#wash">Handwash</a>
+                        <a class="nav-menu-link" href="#spread">Spread</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -98,7 +119,7 @@
                     <img src="/images/s-img-5.jpg" alt="">
                     <div class="content">
                         <img src="./images/s-5.png" alt="">
-                        <h4>tasty berger</h4>
+                        <h4>Tasty Sweets</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique veritatis eveniet quam
                             aspernatur debitis iusto deserunt? Quod, dicta. Deserunt, ex.
                         </p>
@@ -108,7 +129,7 @@
                     <img src="/images/s-img-6.jpg" alt="">
                     <div class="content">
                         <img src="./images/s-6.png" alt="">
-                        <h4>tasty berger</h4>
+                        <h4>Healthy Breakfast</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique veritatis eveniet quam
                             aspernatur debitis iusto deserunt? Quod, dicta. Deserunt, ex.
                         </p>
@@ -255,7 +276,7 @@
 
         <div class="gallery" id="gallery">
             <div class="text">
-                <h3>Most <span>Popular</span> Food</h3>
+                <h3>Our Food <span>Gallery</span></h3>
             </div>
             <div class="row_1">
                 <div class="item">
@@ -419,30 +440,30 @@
                 <div class="image">
                     <img src="/images/order-img.jpg" alt="">
                 </div>
-                <div class="form">
+                <div class="form" id="form" name="form">
                         <div class="row_1">
                             <div class="input">
-                                <input type="text" name="name" placeholder="name">
+                                <input type="text" name="name" placeholder="name" id="name">
                             </div>
                             <div class="input">
-                                <input type="text" name="email" placeholder="email">
+                                <input type="text" name="email" placeholder="email" id="email">
                             </div>
                         </div>
                         <div class="row_2">
                             <div class="input">
-                                <input type="text" name="number" placeholder="number">
+                                <input type="text" name="number" placeholder="number" id="number">
                             </div>
                             <div class="input">
-                                <input type="text" name="food name" placeholder="food name">
+                                <input type="text" name="food_name" placeholder="food name" id="food_name">
                             </div>
                         </div>
                         <div class="row_3">
                             <div class="input">
-                                <input type="text" name="address" placeholder="address">
+                                <input type="text" name="address" placeholder="address" id="address">
                             </div>
                         </div>
                         <div class="button">
-                            <button type="submit">Order Now</button>
+                            <button class="button">Order Now</button>
                         </div>
                     </form>
                 </div>
@@ -479,6 +500,29 @@
                     scrollTop: 0
                 }, 'fast');
             }      
+
+            /* $("#form").validate({
+                rules:{
+                    name: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    number: "required",
+                    food_name: "required",
+                    address: "required"
+                },
+                messages:{
+                    name: "Please enter your firstname",            
+                    email: "Please enter a valid email address",
+                    number: "Please enter your number",
+                    food_name: "Please enter your food-name",
+                    address: "Please enter your address"
+                },
+                submitHandler: function(form) {
+                    form.submit();
+                }
+            });*/
            </script>
     </div>
     <script>
