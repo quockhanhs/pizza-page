@@ -5,6 +5,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: Abel;
 }
 html{
 }
@@ -19,7 +20,7 @@ body{
     box-shadow: 0px 0px 10px 0px gray;
     width: 100%;
     background-color: white;
-    z-index: 2;
+    z-index: 99;
     position: fixed;
 }
 .header ul{
@@ -64,15 +65,15 @@ body{
 }
 
 .home{
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-left: 18vh;
+    padding-right: 18vh;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 100px;
-    height: 650px;
+    height: 100vh;
     background-image: url(./images/home-bg.jpg);
 }
 .home .content{
@@ -145,11 +146,11 @@ body{
 .speciality{
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
-    padding-right: 100px;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-left: 18vh;
+    padding-right: 18vh;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
 }
 .speciality .text{
     margin-bottom: 30px;
@@ -259,8 +260,8 @@ body{
 }
 
 .popular{
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 18vh;
+    padding-right: 18vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -395,7 +396,7 @@ body{
 }
 
 .work{
-    padding: 50px;
+    padding: 12vh;
 }
 .work .text h3{
     font-size: xx-large;
@@ -419,10 +420,10 @@ body{
 .gallery{
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-left: 18vh;
+    padding-right: 18vh;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
 }
 .gallery .text{
     margin-bottom: 30px;
@@ -640,10 +641,10 @@ body{
     padding-bottom: 5px;
 }
 .review{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-left: 18vh;
+    padding-right: 18vh;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
 }
 .review .text{
     margin-bottom: 30px;
@@ -703,10 +704,10 @@ body{
     font-size: small;
 }
 .order{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-left: 18vh;
+    padding-right: 18vh;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
 }
 .order .text{
     margin-bottom: 30px;
@@ -1028,17 +1029,20 @@ body{
     }
 }
 @media (max-width: 800px){
-    .top-bar-mobile{
-        display: block;
-        /*flex: 0.2;*/
-      }
     .nav-menu-right{
         display: none;
     }
-    input#stylebar {
-        display: none;
+    .top-bar-mobile{
+        display: block;
+        flex: 0.2;
       }
-      .menu-mobile {
+    .bx{
+        font-size: xx-large;
+    }
+    input#stylebar{
+        display: none;
+    }
+    .menu-mobile{
         left: calc(0px - var(--width-menu-mobile));
         position: absolute;
         width: var(--width-menu-mobile);
@@ -1050,24 +1054,23 @@ body{
         box-shadow: 0px 0px 0px 0px gray;
         transition: 0.2s;
         text-align: center;
-      }
-      .menu-mobile label {
+    }
+    .menu-mobile label{
         position: absolute;
         top: 10px;
         right: 5px;
-      }
-      .menu-mobile i {
+    }
+    .menu-mobile i{
         color: var(--primary-color);
-      }
-      .menu-mobile-link {
+    }
+    .menu-mobile-link{
         margin-top: 50px;
         margin-left: 0px;
         width: 100%;
         height: 100%;
         position: absolute;
-    
-      }
-      .menu-mobile a {
+    }
+    .menu-mobile a{
         line-height: 2.5rem;
         display: block;
         text-decoration: grey;
@@ -1081,14 +1084,15 @@ body{
         margin-bottom: 10px;
         text-align: left;
         padding-left: 10px;
-      }
-      #stylebar:checked ~ .menu-mobile {
+    }
+    #stylebar:checked ~ .menu-mobile{
         left: 0;
-      }
-      .bx-chevron-left:before {
+    }
+    .bx-chevron-left:before{
         content: "\ecb0";
         color: rgb(248, 246, 246);
     }
+    
     .gallery .row_1 .item {
         height: 160px;
         flex: 1 1 25%;
