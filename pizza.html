@@ -104,7 +104,7 @@
             </div>
             <div class="row_1">
                 <div class="item">
-                    <img src="/images/s-img-1.jpg" alt="">
+                    <img src="./images/s-img-1.jpg" alt="">
                     <div class="content">
                         <img src="./images/s-1.png" alt="">
                         <h4>Tasty Burger</h4>
@@ -494,7 +494,7 @@
                             </div>
                         </div>
                         <div class="button">
-                            <button type="submit">Order Now</button>
+                            <button onclick="validateForm()" type="button">Order Now</button>
                         </div>
                     </form>
                 </div>
@@ -530,31 +530,44 @@
                 $('html,body').animate({
                     scrollTop: 0
                 }, 'fast');
-            }      
-        $(document).ready(function(){
-            $("#form").validate({
-                rules:{
-                    name: "required",
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    number: "required",
-                    food_name: "required",
-                    address: "required"
-                },
-                messages:{
-                    name: "Please enter your firstname",            
-                    email: "Please enter a valid email address",
-                    number: "Please enter your number",
-                    food_name: "Please enter your food-name",
-                    address: "Please enter your address"
-                },
-                submitHandler: function(form) {
-                    form.submit();
+            }
+
+            function validateForm(){
+                // Get the value of the input field with id="numb"
+                let name = document.getElementById("name").value;
+                // If x is Not a Number or less than one or greater than 10
+                let textName = "";
+                let email = document.getElementById("email").value;
+                let number = document.getElementById("number").value;
+                let foodName = document.getElementById("food_name").value;
+                let address = document.getElementById("address").value;
+                let textEmail = "";
+                let textNumber = "";
+                let textFood = "";
+                let textAddress = "";
+                if (name == ""){
                 }
-            }); 
-        });    
+                if (email == ""){
+                }
+                if (number == ""){
+                }
+                if (foodName == ""){
+                }
+                if (address == ""){
+                } else{
+                    textName = "";
+                    textEmail = "";
+                    textNumber = "";
+                    textFood = "";
+                    textAddress = "";
+                        alert(`Name :  ${name}
+                        Email :  ${email} 
+                        Number : ${number}
+                        FoodName : ${foodName}
+                        Address : ${address}`
+                        )
+                }
+            }               
            </script>
     </div>
     <script>
