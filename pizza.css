@@ -5,7 +5,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: Abel;
+    font-family: Nunito;
 }
 html{
 }
@@ -643,8 +643,8 @@ body{
 .review{
     padding-left: 18vh;
     padding-right: 18vh;
-    padding-top: 12vh;
-    padding-bottom: 12vh;
+    /*padding-top: 12vh;
+    padding-bottom: 12vh;*/
 }
 .review .text{
     margin-bottom: 30px;
@@ -838,7 +838,10 @@ body{
     transform-origin: center left;
     transform: scaleX(1);
 }
-
+.order .warning {
+    color:red;
+    font-size: 0.7rem;
+}
 .footer{
     padding-top: 30px;
     padding-bottom: 30px;

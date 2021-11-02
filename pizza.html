@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <link rel="stylesheet" href="pizza.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abel" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -475,22 +476,27 @@
                         <div class="row_1">
                             <div class="input">
                                 <input type="text" name="name" placeholder="name" id="name" required>
+                                <p class="warning" id="warning-name"></p>
                             </div>
                             <div class="input">
                                 <input type="text" name="email" placeholder="email" id="email" required>
+                                <p class="warning" id="warning-email"></p>
                             </div>
                         </div>
                         <div class="row_2">
                             <div class="input">
                                 <input type="text" name="number" placeholder="number" id="number" required>
+                                <p class="warning" id="warning-number"></p>
                             </div>
                             <div class="input">
                                 <input type="text" name="food_name" placeholder="food name" id="food_name" required>
+                                <p class="warning" id="warning-food"></p>
                             </div>
                         </div>
                         <div class="row_3">
                             <div class="input">
                                 <input type="text" name="address" placeholder="address" id="address" required>
+                                <p class="warning" id="warning-address"></p>
                             </div>
                         </div>
                         <div class="button">
@@ -545,15 +551,32 @@
                 let textNumber = "";
                 let textFood = "";
                 let textAddress = "";
-                if (name == ""){
-                }
-                if (email == ""){
-                }
-                if (number == ""){
-                }
-                if (foodName == ""){
-                }
-                if (address == ""){
+                if (name == "" || email == "" || number == "" || foodName == "" || address == "") {
+        if (name == "") {
+            textName = "Bạn Chưa Điền Tên";
+        } else {
+            textName = "";
+        }
+        if (email == "") {
+            textEmail = "Bạn Chưa Điền Email";
+        } else {
+            textEmail = "";
+        }
+        if (number == "") {
+            textNumber = "Bạn Chưa Điền Số Lượng";
+        } else {
+            textNumber = "";
+        }
+        if (foodName == "") {
+            textFood = "Bạn Chưa Điền Sản Phẩm";
+        } else {
+            textFood = "";
+        }
+        if (address == "") {
+            textAddress = "Bạn Chưa Điền Địa Chỉ";
+        } else {
+            textAddress = "";
+        }
                 } else{
                     textName = "";
                     textEmail = "";
@@ -567,6 +590,11 @@
                         Address : ${address}`
                         )
                 }
+                document.getElementById("warning-name").innerHTML = textName;
+                document.getElementById("warning-email").innerHTML = textEmail;
+                document.getElementById("warning-number").innerHTML = textNumber;
+                document.getElementById("warning-food").innerHTML = textFood;
+                document.getElementById("warning-address").innerHTML = textAddress;
             }               
            </script>
     </div>
